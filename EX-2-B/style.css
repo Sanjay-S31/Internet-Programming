@@ -37,6 +37,9 @@ button{
 button:hover{
     font-size: 27px;
 }
+#welcome{
+    font-size: 35px;
+}
 p{
     font-size: 25px;
 }
