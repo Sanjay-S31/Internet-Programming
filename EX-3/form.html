@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">FORM &nbsp;VALIDATION</h1>
+        <div class="form">
+            <form action="#">
+                <label for="name">Name :</label>
+                <input id="name" type="text" class="input" oninput="nameCheck()"><br>
+                <span id="msg" class="msgs">Input field is empty !!!</span>
+                
+                <label for="rollno">Register No. :</label>
+                <input id="rollno" type="number" class="input" oninput="rollCheck()"><br>
+                <span id="msg1" class="msgs">Input field is empty !!!</span>
+
+                <label>Gender : </label>
+                <input id="male" type="radio" name="gender" class="gender">
+                <label for="male" id="gen1">Male</label>
+                <input id="female" type="radio" name="gender" class="gender">
+                <label for="female" id="gen2">Female</label><br>
+                <span id="radio">Radio check cannot be empty</span>
+                
+                <label for="year">Year : </label>
+                <select id="year" class="input">
+                    <option value="none">None</option>
+                    <option value="First">I</option>
+                    <option value="Second">II</option>
+                    <option value="Third">III</option>
+                    <option value="Fourth">IV</option>
+                </select><br>
+                <span id="opt1" class="msgs">Selection cannot be none !!!</span>
+                <label for="dept">Department : </label>
+                <select id="dept" class="input">
+                    <option value="none">None</option>
+                    <option value="Aero">Aeronautical Engineering</option>
+                    <option value="AE">Automobile Engineering</option>
+                    <option value="AIDS">Artifical Intelligence & Data Science</option>
+                    <option value="AIML">Artifical Intelligence & Machine Learning</option>
+                    <option value="BME">BioMedical Engineering</option>
+                    <option value="BT">Bio Technology</option>
+                    <option value="Civil">Civil Engineering</option>
+                    <option value="CE">Chemical Engineering</option>
+                    <option value="CSE">Computer Science & Engineering</option>
+                    <option value="CSD">Computer Science & Design</option>
+                    <option value="CSBS">Computer Science & Business Systems</option>
+                    <option value="EEE">Electrical & Electronics Engineering</option>
+                    <option value="ECE">Electronics & Communication Engineering</option>
+                    <option value="FT">Food Technology</option>
+                    <option value="IT">Information Technology</option>
+                    <option value="Mech">Mechanical Engineering</option>
+                    <option value="ME">Mechatronics Engineering</option>
+                    <option value="RA">Robotics & Automation</option>
+                </select><br>
+                <span id="opt2" class="msgs">Selection cannot be none !!!</span>
+                <label for="section">Section : </label>
+                <select id="section" class="input">
+                    <option value="none">None</option>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                    <option value="E">E</option>
+                </select><br>
+                <span id="opt3" class="msgs">Selection cannot be none !!!</span>
+                <!-- <label>Select Your Section : </label><br>
+                <input id="a-sec" type="radio" name="section" value="A">
+                <label for="a-sec">A</label><br>
+                <input id="b-sec" type="radio" name="section" value="B">
+                <label for="b-sec">B</label><br>
+                <input id="c-sec" type="radio" name="section" value="C">
+                <label for="c-sec">C</label><br>
+                <input id="d-sec" type="radio" name="section" value="D">
+                <label for="d-sec">D</label><br>
+                <input id="e-sec" type="radio" name="section" value="E">
+                <label for="e-sec">E</label><br> -->
+                <label for="mobno">Mobile No. :</label>
+                <input id="mobno" class="input" type="number" oninput="numCheck()"><br>
+                <span id="msg2" class="msgs">Please enter valid Mobile Number</span>
+
+                <label for="email">Email ID :</label>
+                <input id="email" class="input" type="email"><br>
+                <span id="msg4" class="msgs"></span>
+
+                <label for="addr">Address :</label>
+                <textarea id="addr" class="input" rows="3" cols="27"></textarea><br>
+                <span id="msg5" class="msgs">Input field is empty !!!</span>
+
+                <label for="city">City :</label>
+                <input id="city" class="input" type="text"><br>
+                <span id="msg6" class="msgs">Input field is empty !!!</span>
+
+                <label for="country">Country :</label>
+                <input id="country" class="input" type="text"><br>
+                <span id="msg7" class="msgs">Input field is empty !!!</span>
+
+                <label for="pin">Pincode :</label>
+                <input id="pin" class="input" type="number" oninput="pinCheck()"><br>
+                <span id="msg3" class="msgs">Input field is empty !!!</span>
+
+                <div class="buttons">
+                    <input id="submit-btn" type="submit" onclick="checkAll()" value="Submit Entries">
+                    <input id="reset-btn" type="reset" onclick="clearAll()" value="Clear Entries">
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
