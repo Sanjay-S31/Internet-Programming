@@ -78,7 +78,7 @@ input[type="radio"]{
     height: 18px;
 }
 #gen1,#gen2{
-    width: 100px;
+    min-width: 60px;
     font-weight: normal;
 }
 .buttons{
