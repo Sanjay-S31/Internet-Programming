@@ -1,0 +1,102 @@
+body{
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to right,rgb(106, 36, 36),darkviolet,rgb(44, 1, 62));
+    min-width: fit-content;
+}
+#title{
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    letter-spacing: 2px;
+}
+.form{
+    display: flex;
+    padding: 30px;
+    background-color: rgb(197, 191, 191);
+    border: 2px solid black;
+    min-width: fit-content;
+    border-radius: 40px;
+    box-shadow: 0px 0px 10px 5px white
+}
+.form label,option,select{
+    padding: 7px;
+    font-size: 25px;
+}
+input,textarea{
+    padding: 8px;
+    font-size: 20px;
+    transition: font-size 0.5;
+    text-transform: capitalize;
+    transition: all 0.2s ease-in-out;
+}
+input:focus,textarea:focus{
+    border: 3px solid rgb(26, 212, 85);
+    outline: none;
+    transform: scale(1.06);
+}
+input[type="text"]:hover,textarea:hover,select:hover{
+    box-shadow: 0px 0px 5px 2px #3d3d3d;
+}
+select{
+    font-size: 20px;
+}
+label{
+    display: inline-block;
+    min-width: 165px;
+    text-align: left;  
+    font-weight: bold; 
+    letter-spacing: 0.5px;
+}
+label::before{
+    content: '*';
+    color: red;
+}
+#gen1::before,#gen2::before{
+    content: none;
+}
+textarea{
+    resize: none;
+    vertical-align: middle;
+}
+input,option,select,textarea{
+    border: 1px solid #3d3d3d;
+    border-radius: 10px;
+    margin: 7px 0px;
+}
+input::-webkit-outer-spin-button,input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+span{
+    display: none;
+    font-size: 20px;
+    color: red;
+    text-align: center;
+}
+input[type="radio"]{
+    width: 18px;
+    height: 18px;
+}
+#gen1,#gen2{
+    min-width: 60px;
+    font-weight: normal;
+}
+.buttons{
+    display: flex;
+    justify-content: space-evenly;
+    width: auto;
+}
+#submit-btn,#reset-btn{
+    background-image: linear-gradient(blue,darkblue);
+    color: white;
+    padding: 10px 20px;
+    transition: font-size 1s, background-image 0.5s;
+}
+#submit-btn:hover{
+    font-size: 25px;
+    background-image: linear-gradient(greenyellow,green);
+}
+#reset-btn:hover{
+    font-size: 25px;
+    background-image: linear-gradient(red,darkred);
+}
