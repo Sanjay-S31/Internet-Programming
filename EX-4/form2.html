@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <style>
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+            font-size: 25px;
+        }
+        .form{
+            border: 3px solid black;
+            padding: 20px;
+        }
+        label{
+            display: inline-block;
+            min-width: 165px;
+        }
+        input,textarea,select{
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        textarea{
+            resize: none;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">COURSE REGISTRATION FORM</h1>
+    <div class="container">
+        <div class="form">
+            <form action="form_servlet" method="post">
+                <label for="name">Name :</label>
+                <input id="name" type="text" class="input" name="Name"><br>
+                
+                <label for="rollno">Register No. :</label>
+                <input id="rollno" type="number" class="input" name="Register_No"><br>
+    
+                <label>Gender : </label>
+                <input id="male" type="radio" name="Gender" class="gender">
+                <label for="male" id="gen1">Male</label>
+                <input id="female" type="radio" name="Gender" class="gender">
+                <label for="female" id="gen2">Female</label><br>
+        
+                <label for="year">Year : </label>
+                <select id="year" class="input" name="Year">
+                    <option value="none">None</option>
+                    <option value="I">I</option>
+                    <option value="II">II</option>
+                    <option value="III">III</option>
+                    <option value="IV">IV</option>
+                </select><br>
+                
+                <label for="dept">Department : </label>
+                <select id="dept" class="input" name="Department">
+                    <option value="none">None</option>
+                    <option value="Aero">Aeronautical Engineering</option>
+                    <option value="AE">Automobile Engineering</option>
+                    <option value="AIDS">Artifical Intelligence & Data Science</option>
+                    <option value="AIML">Artifical Intelligence & Machine Learning</option>
+                    <option value="BME">BioMedical Engineering</option>
+                    <option value="BT">Bio Technology</option>
+                    <option value="Civil">Civil Engineering</option>
+                    <option value="CE">Chemical Engineering</option>
+                    <option value="CSE">Computer Science & Engineering</option>
+                    <option value="CSD">Computer Science & Design</option>
+                    <option value="CSBS">Computer Science & Business Systems</option>
+                    <option value="EEE">Electrical & Electronics Engineering</option>
+                    <option value="ECE">Electronics & Communication Engineering</option>
+                    <option value="FT">Food Technology</option>
+                    <option value="IT">Information Technology</option>
+                    <option value="Mech">Mechanical Engineering</option>
+                    <option value="ME">Mechatronics Engineering</option>
+                    <option value="RA">Robotics & Automation</option>
+                </select><br>
+
+                <label for="section">Section : </label>
+                <select id="section" class="input" name="Section">
+                    <option value="none">None</option>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                    <option value="E">E</option>
+                </select><br>
+                
+                <label for="mobno">Mobile No. :</label>
+                <input id="mobno" class="input" type="number" name="Mobile_No"><br>
+    
+                <label for="email">Email ID :</label>
+                <input id="email" class="input" type="email" name="Email"><br>
+                
+                <label for="addr">Address :</label>
+                <textarea id="addr" class="input" rows="3" cols="27" name="Address"></textarea><br>
+                
+
+                <label for="city">City :</label>
+                <input id="city" class="input" type="text" name="City"><br>
+                
+                <label for="country">Country :</label>
+                <input id="country" class="input" type="text" name="Country"><br>
+            
+                <label for="pin">Pincode :</label>
+                <input id="pin" class="input" type="number" name="Pincode"><br>
+                
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
