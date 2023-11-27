@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        padding: 15px;
+    }
+</style>
+<body>
+    <h1><u>EMPLOYEE DETAILS</u></h1>
+    <h2>Update the details of Employee</h2>
+    <form action="employee.php" method="post">
+        <label for="eid">Enter Employee ID :</label>
+        <input type="number" name="eid" id="eid"><br>
+        <label for="col">Enter Column Name : </label>
+        <input type="text" id="col" name="col"><br>
+        <label for="val">Enter New Value :</label>
+        <input type="text" id="val" name="val"><br>
+        <input type="submit" name="emp" value="Update">
+        <input type="submit" name="emp" value="Display">
+    </form>
+</body>
+</html>
